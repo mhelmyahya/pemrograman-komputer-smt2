@@ -3,7 +3,8 @@
 
 class Komputasi :
     # menu
-    def menu (self) :
+    @staticmethod
+    def menu () :
         menu = """
 Menghitung Cepat Rambat Gelombang Bunyi:
 1. Medium Padat
@@ -12,17 +13,20 @@ Menghitung Cepat Rambat Gelombang Bunyi:
 """
         return menu
     # medium padat
-    def padat (self, E, ρ) :
+    @staticmethod
+    def padat (E, ρ) :
         hasil = (E / ρ) ** 0.5
         return hasil
     
     # medium cair
-    def cair (self, β, ρ) :
+    @staticmethod
+    def cair (β, ρ) :
         hasil = (β / ρ) ** 0.5
         return hasil
     
     # medium gas
-    def gas (self, γ, R, T, Mr) :
+    @staticmethod
+    def gas (γ, R, T, Mr) :
         hasil = (γ * R * T / Mr) ** 0.5
         return hasil
         
