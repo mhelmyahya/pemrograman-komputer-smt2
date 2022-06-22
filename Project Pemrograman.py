@@ -15,22 +15,22 @@ Menghitung Cepat Rambat Gelombang Bunyi:
     def padat (self, E, ρ) :
         hasil = (E / ρ) ** 0.5
         return hasil
-    
+
     # medium cair
     def cair (self, β, ρ) :
         hasil = (β / ρ) ** 0.5
         return hasil
-    
+
     # medium gas
     def gas (self, γ, R, T, Mr) :
         hasil = (γ * R * T / Mr) ** 0.5
         return hasil
-        
+
 while True :
         print (Komputasi().menu())
         kode = int(input("masukkan pilihan anda: "))
         print ("###################################################")
-        
+
         if kode == 1 :
             print ("Menghitung Cepat Rambat Bunyi di Medium Benda Padat")
             print ("E adalah Modulus Young")
@@ -39,7 +39,7 @@ while True :
             ρ = float(input("masukan nilai ρ: "))
             hasil = (Komputasi().padat(E, ρ))
             print (f"hasil = {hasil:.1f}")
-            
+
         elif kode == 2 :
             print ("Menghitung Cepat Rambat Bunyi di Medium Benda Cair")
             print ("β adalah Modulus Bulk dalam N/m^2")
@@ -48,7 +48,7 @@ while True :
             ρ = float(input("masukan nilai ρ : "))
             hasil = (Komputasi().cair(β,ρ))
             print (f"hasil = {hasil:.1f}")       
-            
+
         elif kode == 3 :
             print ("Menghitung Cepat Rambat Bunyi di Medium Gas")
             print ("γ adalah Konstanta Laplace")
@@ -61,12 +61,12 @@ while True :
             Mr = float(input("masukan nilai Mr : "))
             hasil = (Komputasi().gas(γ, R, T, Mr))
             print (f"hasil = {hasil:.1f}") 
-            
+
         else :
             print ("Inputan Salah")
 
         lagi = input("hitung lagi : (ya/tidak) ")
-         
+
         if lagi == "ya" :
             continue
         elif lagi == "tidak" :
@@ -74,9 +74,8 @@ while True :
             break
         else :
             print ("Inputan Salah")
-            
-            
-            
-            
-            
-        
+
+
+
+
+
