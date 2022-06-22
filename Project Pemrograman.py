@@ -69,7 +69,7 @@ while True :
          
         if lagi == "ya" :
             continue
-        elif lagi == "tidak" :
+        if lagi == "tidak" :
             print ("Program Berakhir")
             break
         else :
